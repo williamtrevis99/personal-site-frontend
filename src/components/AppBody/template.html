@@ -1,0 +1,21 @@
+<div class="main-container">
+    <div class="logo">
+        <h1>- blog-net -</h1>
+    </div>
+<div class="text-box">
+    <textarea name="paragraph_text" cols="50" rows="10" placeholder="Insert Post ..."></textarea>
+    <button>Post</button>
+</div>
+    <div v-for="post in $data.users">
+        <div class="post">
+            <div class="name-space">{{post.name}}</div>
+            <p>{{post.text}}</p>
+            <div class="time-stamp">
+                {{post.time}}
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h4>designed by will</h4>
+    </footer>
+</div>
