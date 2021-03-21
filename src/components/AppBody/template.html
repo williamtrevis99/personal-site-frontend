@@ -1,10 +1,10 @@
 <div class="main-container">
     <div class="logo">
-        <h1>- blog-net -</h1>
+        <h1>blog-net</h1>
     </div>
 <div class="text-box">
-    <textarea name="paragraph_text" cols="50" rows="10" placeholder="Insert Post ..."></textarea>
-    <button>Post</button>
+    <textarea name="paragraph_text" cols="50" rows="10" placeholder="Insert Post ..." id="input_text"></textarea>
+    <button v-on:click="makePostRequest()">Post</button>
 </div>
     <div v-for="post in $data.users">
         <div class="post">

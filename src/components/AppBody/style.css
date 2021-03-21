@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&family=Michroma&display=swap');
 
 :root {
-    --background-color: deepskyblue;
+    --background-color: #3BB9FF;
     --button-color: limegreen;
     --text-box-color: #ededed;
 }
@@ -11,7 +11,7 @@
 .logo {
     height: fit-content;
     width: fit-content;
-    font-family: 'Lobster', cursive;
+    font-family: 'Kanit', sans-serif;
     margin: auto;
     padding: 5px;
     font-size: 40px;
@@ -38,7 +38,7 @@
 .text-box {
     padding: 10px;
     border-radius: 10px 10px 10px 10px;
-    margin: 10px auto 30px auto;
+    margin: 25px auto 30px auto;
     display: block;
     width: 30%;
     min-width: 400px;
@@ -48,7 +48,7 @@
 }
 
 .post:hover {
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
 
 .submit {
@@ -130,10 +130,11 @@ button {
     min-width: 50px;
     color: white;
     outline: none;
+    transition: 0.2s;
 }
 
 button:hover {
-    opacity: 80%;
+    opacity: 90%;
 }
 
 button:active {
