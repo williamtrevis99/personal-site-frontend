@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lobster&display=swap');
+
+
+:root {
+    --background-color: deepskyblue;
+    --button-color: limegreen;
+    --text-box-color: #ededed;
+}
+
+.logo {
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Lobster', cursive;
+    margin: auto;
+    padding: 5px;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    opacity: 70%;
+}
+
+.main-container {
+    background: var(--background-color);
+    height: fit-content;
+    flex-direction: column;
+    padding: 25px;
+    animation: fadein 2s;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
+
+.text-box {
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px auto 30px auto;
+    display: block;
+    width: 30%;
+    min-width: 400px;
+    height: 200px;
+    background: whitesmoke;
+    position: relative;
+}
+
+.post:hover {
+    transform: scale(1.04);
+}
+
+.submit {
+    border-radius: 6px 6px 6px 6px;
+    position: absolute;
+    height: 30px;
+    background: grey;
+    width: 15%;
+    right: 10px;
+    bottom: 10px;
+}
+
+textarea {
+    box-sizing: border-box;
+    border-radius: 6px 6px 6px 6px;
+    height: 85%;
+    background: var(--text-box-color);
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.post {
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px auto 30px auto;
+    display: block;
+    width: 30%;
+    min-width: 400px;
+    height: 150px;
+    background: whitesmoke;
+    position: relative;
+    transition: 0.2s;
+    font-family: monospace;
+    font-size: 18px;
+
+}
+
+footer {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+@keyframes fadein {
+    from {
+        transform: translateX(-5px) translateY(-5px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+.name-space {
+    background-color: var(--button-color);
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 14px;
+
+}
+
+button {
+    font-family: 'Kanit', sans-serif;
+    background: var(--button-color);
+    border: none;
+    display: block;
+    position: relative;
+    margin: 5px 5px 5px auto;
+    padding: 3px 5px 3px 5px;
+    border-radius: 4px 4px 4px 4px;
+    min-width: 50px;
+    color: white;
+    outline: none;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+button:active {
+    transform: scale(1.03);
+}
+
+.time-stamp {
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+p {
+    max-height: 80px;
+}
