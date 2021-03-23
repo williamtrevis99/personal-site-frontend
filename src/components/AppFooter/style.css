@@ -1,0 +1,8 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 26px;
+    font-family: 'Kanit', sans-serif;
+    background-color: #3BB9FF;
+}

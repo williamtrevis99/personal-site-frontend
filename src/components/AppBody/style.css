@@ -89,13 +89,6 @@ textarea {
 
 }
 
-footer {
-    font-family: 'Kanit', sans-serif;
-    display: flex;
-    justify-content: center;
-}
-
-
 @keyframes fadein {
     from {
         transform: translateX(-5px) translateY(-5px);

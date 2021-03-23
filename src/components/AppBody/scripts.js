@@ -3,10 +3,15 @@ import axios from "axios";
 export default {
 
     async beforeMount() {
-        setInterval(async () => {
-            this.users = await this.makeGetRequest();
-        }, 1000)
+        this.users = await this.makeGetRequest();
     },
+
+    sockets: {
+        connect: function () {
+            console.log('socket connected')
+        },
+    },
+
     methods: {
         clearPost() {
             document.getElementById('input_text').value = '';
@@ -22,7 +27,7 @@ export default {
          makeGetRequest() {
             return new Promise( (resolve, reject) => {
                 try {
-                    axios.get('http://localhost:3333/api/posts/get')
+                    axios.get('http://localhost/api/posts/get')
                         .then(function (res) {
                             resolve(res.data.reverse());
                         });
@@ -37,8 +42,7 @@ export default {
 
             return new Promise( (resolve, reject) => {
                 try {
-                    console.log("trying get request");
-                    axios.post('http://localhost:3333/api/posts/post', {
+                    axios.post('http://localhost/api/posts/post', {
                         name: "Will",
                         text: input,
                         time: this.getFullDate(),
